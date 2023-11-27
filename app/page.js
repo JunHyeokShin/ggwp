@@ -1,5 +1,9 @@
-import Image from 'next/image'
+import PlayerSearchBar from '@/components/PlayerSearchBar'
 
 export default function Home() {
-  return <main className="ml-80">메인 섹션</main>
+  return (
+    <div>
+      <PlayerSearchBar />
+    </div>
+  )
 }
