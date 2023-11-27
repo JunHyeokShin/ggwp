@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-surface-light dark:bg-surface-dark">
         <Navigation />
-        {children}
+        <main className="ml-80">{children}</main>
       </body>
     </html>
   )
