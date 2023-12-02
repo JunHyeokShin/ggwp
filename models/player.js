@@ -12,6 +12,21 @@ const playerSchema = new Schema(
     profileIconId: Number,
     revisionDate: Number,
     summonerLevel: Number,
+    league: [
+      {
+        leagueId: String,
+        queueType: String,
+        tier: String,
+        rank: String,
+        leaguePoints: Number,
+        wins: Number,
+        losses: Number,
+        veteran: Boolean,
+        inactive: Boolean,
+        freshBlood: Boolean,
+        hotStreak: Boolean,
+      },
+    ],
     matches: [String],
   },
   {

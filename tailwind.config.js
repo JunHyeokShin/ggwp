@@ -191,7 +191,7 @@ module.exports = {
             },
             high: {
               light: '#ECE6F0',
-              dark: '2B2930',
+              dark: '#2B2930',
             },
             light: '#F3EDF7',
             dark: '#211F26',
@@ -308,6 +308,9 @@ module.exports = {
           },
         },
       },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],

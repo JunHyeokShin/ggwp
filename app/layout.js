@@ -8,7 +8,7 @@ import {
 } from 'next/font/google'
 import './globals.css'
 import 'material-symbols'
-import Navigation from '@/components/Navigation'
+import Header from '@/components/Header'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -49,9 +49,9 @@ export default function RootLayout({ children }) {
       className={`${roboto.variable} ${robotoSerif.variable} ${robotoFlex.variable}
       ${notoSansKr.variable} ${notoSerifKr.variable} ${exo2.variable}`}
     >
-      <body className="bg-surface-light dark:bg-surface-dark">
-        <Navigation />
-        <main className="ml-80">{children}</main>
+      <body className="bg-background-light dark:bg-background-dark">
+        <Header />
+        <main className="container">{children}</main>
       </body>
     </html>
   )

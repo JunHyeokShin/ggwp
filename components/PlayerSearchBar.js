@@ -1,16 +1,20 @@
 'use client'
+
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 export default function PlayerSearchBar() {
   const [gameName, setGameName] = useState('')
-  const [tagLine, setTagLine] = useState('KR1')
+  const [tagLine, setTagLine] = useState('')
   const router = useRouter()
 
   function handleChange(event) {
     const gameNameAndTagLine = event.target.value.split('#')
+
     setGameName(gameNameAndTagLine[0])
-    if (gameNameAndTagLine[1] !== undefined) {
+    if (gameNameAndTagLine[1] === undefined || gameNameAndTagLine[1] === '') {
+      setTagLine('KR1')
+    } else {
       setTagLine(gameNameAndTagLine[1])
     }
   }
