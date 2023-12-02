@@ -1,4 +1,5 @@
 'use client'
+
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
@@ -9,6 +10,7 @@ export default function PlayerSearchBar() {
 
   function handleChange(event) {
     const gameNameAndTagLine = event.target.value.split('#')
+
     setGameName(gameNameAndTagLine[0])
     if (gameNameAndTagLine[1] === undefined || gameNameAndTagLine[1] === '') {
       setTagLine('KR1')
