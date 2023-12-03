@@ -18,6 +18,7 @@ export default function PlayerLeagueSolo({ player }) {
             src="/images/emblems/UNRANKED.png"
             width={96}
             height={96}
+            alt="UNRANKED"
             className="mx-auto"
           />
           <p
@@ -35,6 +36,7 @@ export default function PlayerLeagueSolo({ player }) {
             width={96}
             height={96}
             className="mx-auto"
+            alt={`${player.league[0].tier}`}
           />
           <div className="flex flex-col col-span-2">
             <p className="font-bold text-xl">

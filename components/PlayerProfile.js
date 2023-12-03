@@ -17,6 +17,7 @@ export default function PlayerProfile({ player }) {
             src={`https://ddragon.leagueoflegends.com/cdn/13.23.1/img/profileicon/${player.profileIconId}.png`}
             width={96}
             height={96}
+            alt={`${player.profileIconId}`}
             className="rounded-full shadow-md"
           />
           <div className="block -mt-4 text-center">

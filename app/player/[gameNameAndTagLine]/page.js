@@ -24,7 +24,7 @@ export default async function PlayerPage({ params: { gameNameAndTagLine } }) {
     if (player === null) {
       await updatePlayerInfoDatabase(puuid, gameName, tagLine)
       await updatePlayerLeagueDatabase(puuid)
-      await updatePlayerMatchesDatabase(puuid, 30)
+      await updatePlayerMatchesDatabase(puuid, 10)
       player = await getPlayerDatabase(puuid)
     }
 

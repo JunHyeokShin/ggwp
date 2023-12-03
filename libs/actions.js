@@ -10,6 +10,6 @@ import {
 export async function updatePlayer(puuid, gameName, tagLine) {
   await updatePlayerInfoDatabase(puuid, gameName, tagLine)
   await updatePlayerLeagueDatabase(puuid)
-  await updatePlayerMatchesDatabase(puuid, 50)
+  await updatePlayerMatchesDatabase(puuid, 10)
   revalidatePath('/player/[gameNameAndTagLine]', 'page')
 }
