@@ -16,8 +16,8 @@ export default function PlayerLeagueFlex({ player }) {
         <div className="grid grid-cols-4 text-center items-center px-4 p-2">
           <Image
             src="/images/emblems/UNRANKED.png"
-            width={96}
-            height={96}
+            width={100}
+            height={100}
             alt="UNRANKED"
             className="mx-auto"
           />
@@ -33,10 +33,10 @@ export default function PlayerLeagueFlex({ player }) {
         <div className="grid grid-cols-4 text-center items-center px-4 p-2">
           <Image
             src={`/images/emblems/${player.league[1].tier}.png`}
-            width={96}
-            height={96}
+            width={100}
+            height={100}
             className="mx-auto"
-            alt={`${player.league[0].tier}`}
+            alt={`${player.league[1].tier}`}
           />
           <div className="flex flex-col col-span-2">
             <p className="font-bold text-xl">

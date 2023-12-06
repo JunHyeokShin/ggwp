@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <nav
       className="shadow-md bg-surface-container-low-light dark:bg-surface-container-low-dark
-    text-on-surface-light dark:text-on-surface-dark"
+      text-on-surface-light dark:text-on-surface-dark"
     >
-      <div className="container h-20 p-6 flex justify-between items-center">
+      <div className="max-w-7xl min-w-[1024px] mx-auto h-20 p-6 flex justify-between items-center">
         <div className="flex items-center">
           <Link href="/">
             <h1 className="exo-2 text-5xl font-black italic">GGWP</h1>
