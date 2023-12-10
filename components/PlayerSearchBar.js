@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import 'material-symbols'
 
 export default function PlayerSearchBar() {
   const [gameName, setGameName] = useState('')
@@ -25,9 +26,19 @@ export default function PlayerSearchBar() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="플레이어#태그" onChange={handleChange} />
-      <button>검색</button>
+    <form
+      onSubmit={handleSubmit}
+      className="rounded-full justify-between bg-white divide-x px-5 py-2 w-6/12"
+    >
+      <input
+        type="text"
+        placeholder="플레이어#태그"
+        onChange={handleChange}
+        className="bg-transparent w-11/12 outline-none"
+      />
+      <button className="material-symbols-rounded align-middle pl-3 w-1/12">
+        Search
+      </button>
     </form>
   )
 }
