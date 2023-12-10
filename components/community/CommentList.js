@@ -56,7 +56,7 @@ export default function CommentList({ post }) {
               onChange={(e) => {
                 setComment(e.target.value)
               }}
-              className="p-3 w-[80%] rounded-r-lg border border-outline-light dark:border-outline-dark bg-surface-container-low-light dark:bg-surface-container-low-light"
+              className="p-3 w-[80%] rounded-r-lg border border-outline-light dark:border-outline-dark bg-surface-container-low-light dark:bg-surface-container-low-dark"
             />
           </div>
           <button
