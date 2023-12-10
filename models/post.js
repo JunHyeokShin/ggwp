@@ -7,12 +7,12 @@ const postSchema = new Schema(
     title: String,
     videoUrl: String,
     mainText: String,
+    counts: Number,
     comments: [
       {
         id: Number,
         userName: String,
         comment: String,
-        createdAt: Date,
       },
     ],
   },

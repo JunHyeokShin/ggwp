@@ -1,0 +1,46 @@
+[
+  {
+    "id": 0,
+    "name": "김승언",
+    "github_id": "anvoanvo",
+    "github_nickname": "anvo",
+    "github_url": "https://github.com/anvoanvo",
+    "github_profile_image_url": "https://avatars.githubusercontent.com/u/143992350?s=400&v=4",
+    "roles": ["커뮤니티 페이지 제공", "데모 영상 녹화"],
+    "portfolio_url": "https://site-anvoanvo.vercel.app/"
+  },
+  {
+    "id": 1,
+    "name": "신준혁",
+    "github_id": "JunHyeokShin",
+    "github_nickname": "HYK",
+    "github_url": "https://github.com/JunHyeokShin",
+    "github_profile_image_url": "https://avatars.githubusercontent.com/u/68908725?v=4",
+    "roles": [
+      "Github 리포지터리 관리",
+      "플레이어 정보/경기 기록·정보 백엔드",
+      "player 페이지 프론트엔드"
+    ],
+    "portfolio_url": "https://portfolio-hyk.vercel.app"
+  },
+  {
+    "id": 2,
+    "name": "유혁준",
+    "github_id": "Heockjun",
+    "github_nickname": "Heockjun",
+    "github_url": "https://github.com/Heockjun",
+    "github_profile_image_url": "https://avatars.githubusercontent.com/u/83164005?v=4",
+    "roles": ["랭킹 페이지 구현"],
+    "portfolio_url": "https://next-js-portfolio-jade.vercel.app/"
+  },
+  {
+    "id": 3,
+    "name": "박서진",
+    "github_id": "PSJ03",
+    "github_nickname": "Charles",
+    "github_url": "https://github.com/PSJ03",
+    "github_profile_image_url": "https://avatars.githubusercontent.com/u/50985447?v=4",
+    "roles": ["메인 페이지 프론트엔드 디자인 일부 수정"],
+    "portfolio_url": "https://sj-website-psj03.vercel.app/"
+  }
+]
