@@ -8,8 +8,6 @@ import {
 import PlayerProfile from '@/components/PlayerProfile'
 import PlayerLeagueSolo from '@/components/PlayerLeagueSolo'
 import PlayerLeagueFlex from '@/components/PlayerLeagueFlex'
-import PlayerMatchCard from '@/components/PlayerMatchCard'
-import PlayerChampion from '@/components/PlayerChampion'
 import PlayerMatchCards from '@/components/PlayerMatchCards'
 
 export default async function PlayerPage({ params: { gameNameAndTagLine } }) {
@@ -32,18 +30,15 @@ export default async function PlayerPage({ params: { gameNameAndTagLine } }) {
     }
 
     return (
-      <div className="m-3 grid grid-cols-2 xl:grid-cols-3 gap-3">
+      <div className="m-3 grid grid-cols-2 gap-3">
         <div className="grid col-span-2 xl:col-span-3">
           <PlayerProfile player={player} />
         </div>
-        <div className="grid grid-cols-2 col-span-2 gap-3 xl:grid-cols-1 xl:row-span-2 xl:col-span-1">
+        <div className="grid grid-cols-2 col-span-2 gap-3">
           <PlayerLeagueSolo player={player} />
           <PlayerLeagueFlex player={player} />
         </div>
-        <div className="grid col-span-2 min-h-fit xl:row-span-2">
-          <PlayerChampion player={player} />
-        </div>
-        <div className="grid gap-3 col-span-2 xl:col-span-3">
+        <div className="grid gap-3 col-span-2">
           <PlayerMatchCards player={player} />
         </div>
       </div>

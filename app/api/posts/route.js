@@ -17,6 +17,7 @@ export async function POST(request) {
     title,
     videoUrl: youtubeUrl,
     mainText,
+    counts: 0,
     comments: [null],
   })
   return NextResponse.json({}, { status: 201 })

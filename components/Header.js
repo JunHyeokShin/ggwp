@@ -25,17 +25,6 @@ export default function Header() {
             <p className="text-lg ml-1">홈</p>
           </Link>
           <Link
-            href="/"
-            className="flex items-center mx-1 px-2 rounded-full
-            hover:bg-on-surface-light hover:dark:bg-on-surface-dark hover:bg-opacity-8 hover:dark:bg-opacity-8
-            hover:text-on-secondary-container-light hover:dark:text-on-secondary-container-dark
-            active:bg-on-secondary-container-light active:dark:bg-on-secondary-container-dark
-            active:bg-opacity-8 active:dark:bg-opacity-8"
-          >
-            <span className="material-symbols-rounded">monitoring</span>
-            <p className="text-lg ml-1">통계</p>
-          </Link>
-          <Link
             href="/leaderboard"
             className="flex items-center mx-1 px-2 rounded-full
             hover:bg-on-surface-light hover:dark:bg-on-surface-dark hover:bg-opacity-8 hover:dark:bg-opacity-8
@@ -56,6 +45,19 @@ export default function Header() {
           >
             <span className="material-symbols-rounded">groups</span>
             <p className="text-lg ml-1">커뮤니티</p>
+          </Link>
+          <Link
+            href="/about-us"
+            className="flex items-center mx-1 px-2 rounded-full
+            hover:bg-on-surface-light hover:dark:bg-on-surface-dark hover:bg-opacity-8 hover:dark:bg-opacity-8
+            hover:text-on-secondary-container-light hover:dark:text-on-secondary-container-dark
+            active:bg-on-secondary-container-light active:dark:bg-on-secondary-container-dark
+            active:bg-opacity-8 active:dark:bg-opacity-8"
+          >
+            <span className="material-symbols-rounded">
+              perm_contact_calendar
+            </span>
+            <p className="text-lg ml-1">About Us</p>
           </Link>
         </div>
       </div>
