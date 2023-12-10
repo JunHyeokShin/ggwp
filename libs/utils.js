@@ -39,7 +39,7 @@ export async function fetchPlayerInfoFromGameNameAndTagLine(gameName, tagLine) {
 
 export async function fetchRankData(queue) {
   const url = `https://kr.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/${queue}?api_key=${process.env.API_KEY}`
-  const response = await fetch(url)
+  const response = await fetch(url, { cache: 'no-store' })
   const fetchedData = await response.json()
   return fetchedData
 }
