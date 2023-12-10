@@ -36,7 +36,7 @@ export default function Header() {
             <p className="text-lg ml-1">통계</p>
           </Link>
           <Link
-            href="/"
+            href="/leaderboard"
             className="flex items-center mx-1 px-2 rounded-full
             hover:bg-on-surface-light hover:dark:bg-on-surface-dark hover:bg-opacity-8 hover:dark:bg-opacity-8
             hover:text-on-secondary-container-light hover:dark:text-on-secondary-container-dark

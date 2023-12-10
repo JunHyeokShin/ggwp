@@ -1,11 +1,13 @@
 import Match from '@/models/match'
 import Player from '@/models/player'
+import Ranking from '@/models/ranking'
 import mongoose from 'mongoose'
 import {
   fetchPlayerInfoData,
   fetchPlayerLeagueData,
   fetchPlayerMatchesData,
   fetchMatchData,
+  fetchRankData,
 } from './utils'
 
 export default async function connectDB() {
@@ -218,6 +220,20 @@ export async function updateMatchDatabase(matchId) {
   }
 }
 
+export async function updateRankingDatabase(queueType) {
+  await connectDB()
+  const ranking = await fetchRankData(queueType)
+  ranking.entries.sort((a, b) => {
+    return b.leaguePoints - a.leaguePoints
+  })
+
+  if ((await Ranking.findOne({ queue: queueType })) !== null) {
+    await Ranking.updateOne({ queue: queueType }, { ranking })
+  } else {
+    await Ranking.create(ranking)
+  }
+}
+
 export async function getPlayerDatabase(playerPuuid) {
   await connectDB()
   const player = await Player.findOne({ puuid: playerPuuid })
@@ -228,4 +244,10 @@ export async function getMatchDatabase(matchId) {
   await connectDB()
   const match = await Match.findOne({ 'metadata.matchId': matchId })
   return match
+}
+
+export async function getRankDatabase(queueType) {
+  await connectDB()
+  const rank = await Ranking.findOne({ queue: queueType })
+  return rank
 }
