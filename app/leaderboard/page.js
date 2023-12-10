@@ -1,16 +1,13 @@
 import React from 'react'
 import { getRankDatabase, updateRankingDatabase } from '@/libs/database'
-
 import Link from 'next/link'
 
 export default async function LeaderboardPage() {
   await updateRankingDatabase('RANKED_SOLO_5x5')
   const soloRank = await getRankDatabase('RANKED_SOLO_5x5')
-  console.log(soloRank)
 
   await updateRankingDatabase('RANKED_FLEX_SR')
   const flexRank = await getRankDatabase('RANKED_FLEX_SR')
-  console.log(flexRank)
 
   const RankList = ({ entries, rankType }) => (
     <div>
@@ -42,7 +39,6 @@ export default async function LeaderboardPage() {
             </p>
           </div>
         </div>
-        // </Link>
       ))}
     </div>
   )
