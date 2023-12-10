@@ -31,7 +31,7 @@ export default async function PlayerPage({ params: { gameNameAndTagLine } }) {
 
     return (
       <div className="m-3 grid grid-cols-2 gap-3">
-        <div className="grid col-span-2 xl:col-span-3">
+        <div className="grid col-span-2">
           <PlayerProfile player={player} />
         </div>
         <div className="grid grid-cols-2 col-span-2 gap-3">
