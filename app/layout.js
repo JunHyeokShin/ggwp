@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-background-light dark:bg-background-dark">
         <Header />
-        <main className="container">{children}</main>
+        <main className="max-w-7xl min-w-[1024px] mx-auto">{children}</main>
       </body>
     </html>
   )

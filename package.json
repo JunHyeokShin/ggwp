@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "jsonpath": "^1.1.1",
     "material-symbols": "^0.14.2",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-youtube": "^10.1.0",
     "sharp": "^0.33.0"
   },
   "devDependencies": {

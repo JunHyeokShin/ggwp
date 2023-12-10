@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import PlayerUpdateButton from './PlayerUpdateButton'
+import { getUntilTime } from '@/libs/utils'
 
 export default function PlayerProfile({ player }) {
   const now = new Date()
-  const updatedBefore = ((now - player.updatedAt) / 60000).toFixed()
 
   return (
     <div
@@ -47,7 +47,9 @@ export default function PlayerProfile({ player }) {
       </div>
       <div className="flex items-end min-w-fit">
         <div className="flex flex-col items-end">
-          <p className="text-sm pb-2">최근 업데이트: {updatedBefore}분 전</p>
+          <p className="text-sm pb-2">
+            최근 업데이트: {getUntilTime(player.updatedAt)}
+          </p>
           <PlayerUpdateButton
             puuid={player.puuid}
             gameName={player.gameName}
